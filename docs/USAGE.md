@@ -21,7 +21,7 @@ This pipeline automates the analysis of Whole-Genome Sequencing (WGS) data, from
 ### Quick Start
 
 ```bash
-nextflow run your-username/Nextflow-Neurogenomics-Pipeline -r main -profile test,docker
+nextflow run olaflaitinen/Nextflow-Neurogenomics-Pipeline -r main -profile test,docker
 ```
 
 ### Required Arguments
