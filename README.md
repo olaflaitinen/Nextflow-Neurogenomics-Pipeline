@@ -95,4 +95,17 @@ nextflow run your-username/Nextflow-Neurogenomics-Pipeline \
     --outdir './results'
 ```
 
-For more details on pa
+For more details on parameters and output, see `docs/USAGE.md` and `docs/OUTPUT.md`.
+
+### Credits
+
+This pipeline was built using the excellent `nf-core` community guidelines and tools. It uses the following software:
+
+*   FastQC
+*   BWA
+*   Samtools
+*   GATK4
+*   VEP (Variant Effect Predictor)
+*   MultiQC
+
+Developed by O. Yunus L. Imanov.
