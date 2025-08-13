@@ -1,7 +1,6 @@
 # Nextflow-Neurogenomics-Pipeline
 
 [![Nextflow](https://img.shields.io/badge/nextflow%20DSL2-%E2%89%A521.10.3-239f20.svg)](https://www.nextflow.io/)
-[![CI](https://github.com/your-username/Nextflow-Neurogenomics-Pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/Nextflow-Neurogenomics-Pipeline/actions/workflows/ci.yml)
 [![nf-core](https://img.shields.io/badge/nf--core-compliant-brightgreen)](https://nf-co.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
