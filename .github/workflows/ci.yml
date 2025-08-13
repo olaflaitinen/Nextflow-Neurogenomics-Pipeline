@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        nextflow_version: ['22.10.1', 'latest-stable']
+
+    steps:
+      - name: Check out pipeline code
+        uses: actions/checkout@v3
+
+      - name: Install Nextflow
+        uses: nf-core/setup-nextflow@v1
+        with:
+          version: ${{ matrix.nextflow_version }}
+          
+      - name: Install nf-core
+        run: pip install nf-core
+
+      - name: Run nf-core lint
+        run: nf-core lint .
+
+      - name: Run pipeline with test data
+        run: |
+          nextflow run . -profile test,docker
