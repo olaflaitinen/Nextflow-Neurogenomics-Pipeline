@@ -1,0 +1,21 @@
+# Nextflow temporary files
+.nextflow*
+work/
+log.out*
+*trace.txt
+*report.html
+*timeline.html
+*dag.dot
+
+# Results
+results/
+test_results/
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
