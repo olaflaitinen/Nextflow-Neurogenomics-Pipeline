@@ -1,0 +1,35 @@
+# assets/multiqc_config.yaml
+
+report_comment: "QC report for the Nextflow-Neurogenomics-Pipeline"
+
+# Order of tools in the report
+module_order:
+  - fastqc:
+      name: "FastQC (Raw Reads)"
+      info: "Raw read quality metrics."
+  - samtools:
+      name: "Samtools Stats (Alignment)"
+      info: "Alignment statistics after BWA-MEM."
+  - picard:
+      name: "Picard MarkDuplicates"
+      info: "PCR duplicate metrics."
+  - vep:
+      name: "VEP Stats"
+      info: "Variant annotation statistics."
+
+# Custom content to add to the top of the report
+custom_content:
+  order: -1000
+  - "## Nextflow-Neurogenomics-Pipeline Report"
+  - "This report was generated from the results of the WGS analysis pipeline."
+
+# Customize plot appearance
+sp:
+  fastqc/status_plot:
+    pconfig:
+      title: "FastQC Module Status"
+
+# Hide certain plots or table columns if they are not relevant
+table_columns_hidden:
+  FastQC:
+    - "percent_gc"
