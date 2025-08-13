@@ -37,7 +37,7 @@ The results will be created in the directory specified by `--outdir`.
 └── pipeline_info/ # Nextflow execution reports
 ├── execution_report.html
 └── ...
-
+<outdir>
 
 ### Key Output Files
 
