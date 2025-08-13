@@ -66,7 +66,7 @@ Input FASTQ files │...│
 3.  **Run the pipeline with test data**
 
     ```bash
-    nextflow run your-username/Nextflow-Neurogenomics-Pipeline -r main -profile test,docker
+    nextflow run olaflaitinen/Nextflow-Neurogenomics-Pipeline -r main -profile test,docker
     ```
 
 ### Usage
@@ -87,7 +87,7 @@ PATIENT01,./data/P01_R1.fastq.gz,./data/P01_R2.fastq.gz,case
 **2. Full Command**
 
 ```bash
-nextflow run your-username/Nextflow-Neurogenomics-Pipeline \
+nextflow run olaflaitinen/Nextflow-Neurogenomics-Pipeline \
     -profile docker \
     --input 'path/to/your/samplesheet.csv' \
     --genome 'GRCh38' \
